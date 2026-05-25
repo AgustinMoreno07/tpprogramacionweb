@@ -1,0 +1,113 @@
+body {
+    background-image: url("img/fondo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Georgia', serif ;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 3px;
+
+    /*sombra*/
+    text-shadow: 
+    0 0 5px #fc44d4,
+    0 0 20px #5344f9;
+
+    /*animacion */
+    transition:0.3s ease,
+}
+
+    /*efecto del mouse*/
+h1 :hover{
+    transform: scale(1.08);
+
+    text-shadow: 
+    0 0 10px #fc44d4,
+    0 0 35px #5344f9;
+}
+
+.carta-partido{
+    width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.08) ;/*crear la tarjeta*/
+    backdrop-filter: blur(8px); /*fondo borroso*/
+
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    text-align: center;
+    color: white;
+}
+
+.carta-partido h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.equipos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.vs {
+    color: #fc44d4;
+    font-size: 28px;
+}
+
+.fecha{
+    margin-top: 20px;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+#contador {
+    margin-top: 25px;
+
+    font-size: 32px;
+    font-weight: bold;
+
+    color: #ffffff;
+
+    text-shadow: 
+    0 0 10px #fc44d4,
+    0 0 20px #5344f9
+}
+
+.equipo-final{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.equipo-final img {
+    width: 70px;
+    height: 70px;
+
+    object-fit: contain;
+    transition: 0.3 ease;
+}
+
+.fase{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+
+    background: #5344f9;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 10px;
+}

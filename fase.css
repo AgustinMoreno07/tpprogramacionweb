@@ -1,0 +1,107 @@
+body{
+    background-image: url("img/fondo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+    margin: 0;
+    min-height: 100vh;
+}
+
+h1 {
+    color: white;
+}
+table{
+margin: 30px auto;
+border-collapse: collapse;
+width: 80%;
+color: white;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: rgba(83, 68, 249, 0.7);
+}
+
+tr {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+h1 {
+    text-align: center;
+}
+
+.clasificado{
+    background-color: rgba(0, 255, 0, 0.15);
+    border-left: 6px solid #00ff00;
+}
+
+.playoffs{
+    background-color: rgba(255, 165, 0, 0.15);
+    border-left: 6px solid orange;
+}
+
+.eliminados{
+    background-color: rgba(255, 0, 0, 0.15);
+    border-left: 6px solid red;
+}
+
+.leyenda {
+    color: white;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 15px 25px;
+
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+
+    backdrop-filter: blur(5px); /*genera el fondo borroso*/
+}
+.item-leyenda{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin: 8px 0;
+}
+.cuadro{
+    width: 20px;
+    height: 20px;
+
+    display: inline-block;
+
+    border-radius: 4px;
+}
+
+.cuadro-verde{
+    background-color: rgba(0, 255, 0, 0.5);
+}
+
+.cuadro-naranja{
+    background-color: rgba(255, 165, 0, 0.5);
+}
+
+.cuadro-rojo{
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.volver{
+
+    margin: 30px auto;
+
+    padding: 12px 25px;
+
+    background: rgba(83, 68, 249, 0.8);
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 10px;
+}
