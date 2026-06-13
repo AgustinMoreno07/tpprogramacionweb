@@ -1,15 +1,49 @@
+html, body{
+    min-height: 100vh;
+    margin: 0;
+}
+
 body {
     background-image: url("img/fondo.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
-    margin: 0;
+    background-attachment: fixed;
+}
+
+.header{
+    flex-direction: column;
+    align-items: center;
+    display:flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.boton-fase, 
+.boton-eliminacion {
+text-decoration: none;
+color: #9b4caf;
+font-weight: bold;
+padding: 12px 24px;
+border: 2px solid #9b4caf;
+border-radius: 6px;
+transition: background-color 0.3s, color 0.3s;
+}
+
+.boton-fase:hover {
+background-color: #9b4caf;
+color: white;
+}
+
+.boton-eliminacion:hover {
+background-color: #9b4caf;
+color: white;
 }
 
 h1 {
     font-family: 'Georgia', serif ;
-    font-size: 40px;
+    font-size: clamp(2rem, 8vw, 5rem);
     color: #ffffff;
     text-align: center;
     letter-spacing: 3px;
@@ -33,7 +67,8 @@ h1 :hover{
 }
 
 .carta-partido{
-    width: 500px;
+    width: 90%;
+    max-width: 700px;
     margin: 40px auto;
     padding: 30px;
 
@@ -54,7 +89,7 @@ h1 :hover{
 
 .equipos {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 25px;
 
@@ -89,7 +124,7 @@ h1 :hover{
 .equipo-final{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 12px;
 }
 .equipo-final img {
@@ -110,4 +145,73 @@ h1 :hover{
 
     text-decoration: none;
     border-radius: 10px;
+}
+
+.footer {
+background: rgba(10, 10, 35, 0.9);
+color: #aaa;
+text-align: center;
+padding: 20px;
+font-size: 14px;
+margin-top: 40px;
+}
+
+.footer-content {
+max-width: 900px;
+margin: 0 auto;
+}
+
+.footer-nav a {
+color: #4CAF50;text-decoration: none;
+margin: 0 8px;
+font-weight: 500;
+transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+color: #81c784;
+}
+
+.social-icons a {
+margin: 0 8px;
+font-size: 18px;
+color: #4CAF50;
+text-decoration: none;
+transition: color 0.3s;
+}
+
+.social-icons a:hover {
+color: #81c784;
+}
+
+@media (max-width: 768px) {
+.header {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-eliminacion,
+.boton-fase {
+    width: 80%;
+    text-align: center;
+    max-width: 350px;
+    margin-bottom: 30px;
+}
+.carta-partido{
+
+    width: 95%;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+#contador{
+    font-size: 1.5rem;
+}
+
+.equipos{
+    flex-direction: column;
+    gap: 15px;
+}
 }
